@@ -1,507 +1,351 @@
- body {
-
-     margin: 0;
-     font-family: "Roboto", Arial, sans-serif;
-     background: rgb(235, 236, 242);
-
- }
-
- .whatsapp-float {
-     position: fixed;
-     bottom: 35px;
-     right: 35px;
-     width: 65px;
-     height: 65px;
-     background-color: #25D366;
-     border-radius: 50%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     z-index: 9999;
-     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-     transition: transform 0.3s ease, box-shadow 0.3s ease;
- }
-
- .whatsapp-float img {
-     width: 67px;
-     height: auto;
-     border-radius: 50%;
- }
-
- .whatsapp-float:hover {
-     transform: scale(1.1);
-     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
- }
-
- html {
-     scroll-behavior: smooth;
- }
-
- section {
-     scroll-margin-top: 120px;
- }
-
-
- /* 
-=================================
-Header section
-=================================
- */
-
- .navbar {
-     position: sticky;
-     top: 0;
-
-
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     gap: 90px;
-
-     background-color: #22243d;
-     z-index: 10000;
-
- }
-
- .nav-item {
-     font-family: "Poppins";
-     font-size: 27px;
-     color: #d6e0e9;
-     cursor: pointer;
-     transition: color 0.3s ease;
-     padding-top: 20px;
-     padding-bottom: 20px;
-     text-decoration: none;
- }
-
- .nav-item:hover {
-     color: #6455e9;
- }
-
- /* 
-=================================
-Hero section
-=================================
- */
- .hero-image {
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
-
- }
-
- .hero-image-container {
-     position: relative;
-     height: 90vh;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     overflow: hidden;
- }
-
-
- .text-in-image-1 {
-     font-size: 64px;
-     color: #f7ebeb;
-     font-family: "Montserrat";
-     font-weight: 700;
-     line-height: 1.2;
-
- }
-
- .text-in-image-1 span {
-     color: #6455e9;
- }
-
-
-
-
-
- .text-in-image-container {
-     position: absolute;
-     inset: 0;
-     z-index: 2;
-
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-
-     text-align: center;
-     animation: fadeUp 1.2s ease;
- }
-
- /* 
-=================================
-About section
-=================================
- */
- .about-section {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     gap: 70px;
- }
-
- .about-image-container {
-     max-width: 600px;
-     min-width: 400px;
- }
-
- .about-image-container img {
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
- }
-
- .about-text-container {
-     max-width: 460px;
-     min-width: 400px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
- }
-
- .about-text-container p {
-     font-family: "Montserrat";
-     font-size: 21px;
-     color: #22243d;
-     text-align: center;
-     line-height: 1.2;
- }
-
- .about-h1 {
-     font-family: "Montserrat";
-     font-size: 60px;
-     color: #22243d;
-     text-align: center;
-     margin-top: 50px;
-     margin-bottom: 20px;
- }
-
- .achievement-h1 {
-     font-family: "Montserrat";
-     font-size: 42px;
-     color: #22243d;
-     text-align: center;
-     margin-bottom: 20px;
- }
-
- .achievement-item {
-     font-family: "Montserrat";
-     font-size: 20px;
-     color: #4f3fe4;
-     margin-bottom: 8px;
- }
-
-
-
- /*=================================
-     swim program section
-   =================================*/
-
- .program-card {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     gap: 15px;
-     margin-bottom: 40px;
- }
-
-
-
- .program-h1 {
-     font-family: "Montserrat";
-     font-size: 55px;
-     color: #22243d;
-     text-align: center;
-     margin-bottom: 100px;
- }
-
- .program-h1 span {
-     font-size: 20px;
-
- }
-
- .program-card-image {
-     width: 120px;
-     height: 120px;
-     border-radius: 60px;
- }
-
-
-
- .program-card p {
-     font-family: "Montserrat";
-     font-size: 20px;
-     color: #22243d;
-     text-align: center;
-     line-height: 1.2;
- }
-
- .program-card h2 {
-     font-family: "Montserrat";
-     font-size: 28px;
-     color: #22243d;
-     text-align: center;
-     margin: 0;
- }
-
- .program-section {
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     gap: 80px;
-     padding: 0 80px;
-     margin-bottom: 100px;
- }
-
-
- /*=================================
-     contact section
-   =================================*/
-
- .contact-section {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-direction: column;
-     gap: 30px;
-     background-color: rgb(66, 69, 97);
- }
-
-
-
- .icon-container {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     gap: 30px;
- }
-
-
-
-
- .whatsapp-icon,
- .instagram-icon,
- .facebook-icon,
- .mail-icon {
-     width: 40px;
-     height: 40px;
-
-
- }
-
- .contact-section h1 {
-     font-family: "Montserrat";
-     font-size: 50px;
-     color: #f7ebeb;
-     text-align: center;
-     margin: 0;
-     padding-bottom: 50px;
- }
-
- .contact-section p {
-     font-family: "Montserrat";
-     font-size: 18px;
-     color: #f7ebeb;
-     text-align: center;
-     margin: 0;
- }
-
- /*=================================
-    Responsive for screens <= 768px
-=================================*/
- @media (max-width: 768px) {
-
-     body {
-
-         overflow-x: hidden;
-         /* prevent side scroll */
-     }
-
-     /* NAVBAR */
-     .navbar {
-         flex-direction: row;
-         gap: 20px;
-         padding: 10px;
-         justify-content: center;
-     }
-
-     .nav-item {
-         font-size: 18px;
-         padding: 10px 0;
-     }
-
-     /* HERO IMAGE – FULL VIEW */
-     .hero-image-container {
-         height: 288px;
-
-
-
-     }
-
-     .hero-image {
-         width: 100%;
-         height: auto;
-         object-fit: cover;
-     }
-
-     /* HERO TEXT – SCALE DOWN */
-     .text-in-image-container {
-         padding: 10px;
-
-     }
-
-     .text-in-image-1 {
-         font-size: 20px;
-         line-height: 1.2;
-         padding: 0 10px;
-         text-align: center;
-     }
-
-     .text-in-image-1 span {
-         font-size: 18px;
-         display: block;
-         margin-top: 6px;
-     }
-
-     /* ABOUT SECTION */
-     .about-section {
-         flex-direction: column;
-         gap: 30px;
-         padding: 20px;
-     }
-
-     .about-image-container {
-         max-width: 350px;
-         min-width: auto;
-
-     }
-
-     .about-text-container {
-         max-width: 100%;
-         min-width: auto;
-     }
-
-     .about-text-container p {
-         font-size: 18px;
-         text-align: center;
-     }
-
-     .about-h1 {
-         font-size: 36px;
-         margin-top: 30px;
-         margin-bottom: 20px;
-     }
-
-     .achievement-h1 {
-         font-size: 32px;
-     }
-
-     .achievement-item {
-         font-size: 16px;
-     }
-
-     /* SWIM PROGRAMS */
-     .program-section {
-         grid-template-columns: 1fr;
-         /* stack vertically */
-         gap: 40px;
-         padding: 0 20px;
-         margin-bottom: 50px;
-     }
-
-     .program-card-image {
-         width: 100px;
-         height: 100px;
-         border-radius: 50px;
-     }
-
-     .program-card h2 {
-         font-size: 22px;
-     }
-
-     .program-card p {
-         font-size: 16px;
-     }
-
-     .program-h1 {
-         font-size: 36px;
-         margin-bottom: 50px;
-     }
-
-     .program-h1 span {
-         font-size: 16px;
-     }
-
-     /* CONTACT SECTION */
-     .contact-section {
-         padding: 20px;
-     }
-
-     .contact-section h1 {
-         font-size: 32px;
-     }
-
-     .contact-section p {
-         font-size: 16px;
-     }
-
-     .icon-container {
-         gap: 20px;
-     }
-
-     .whatsapp-icon,
-     .instagram-icon,
-     .facebook-icon,
-     .mail-icon {
-         width: 30px;
-         height: 30px;
-     }
-
-     /* WHATSAPP FLOAT */
-     .whatsapp-float {
-         width: 55px;
-         height: 55px;
-         bottom: 20px;
-         right: 20px;
-     }
-
-     .whatsapp-float img {
-         width: 50px;
-         height: auto;
-     }
-
-
-
-
-     .hero-image {
-         width: 100%;
-         height: auto;
-         object-fit: cover;
-         display: block;
-     }
-
-     .text-in-image-container {
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-         text-align: center;
-         z-index: 2;
-         padding: 0 10px;
-     }
-
-     .text-in-image-1 {
-         font-size: 30px;
-         line-height: 1.2;
-     }
-
-     .text-in-image-1 span {
-         font-size: 22px;
-         display: block;
-         margin-top: 6px;
-     }
- }
+/* --- Global Styles --- */
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    background: rgb(235, 236, 242);
+    color: #22243d;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- Navbar --- */
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    background-color: #22243d;
+    z-index: 10000;
+    padding: 10px 0;
+}
+
+.nav-item {
+    font-family: "Poppins";
+    font-size: 20px;
+    color: #d6e0e9;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-item:hover {
+    color: #6455e9;
+}
+
+/* --- Hero Section (With Fade) --- */
+.hero-image-container {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(235, 236, 242);
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+}
+
+.text-in-image-container {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-in-image-1 {
+    font-size: 64px;
+    color: #f7ebeb;
+    font-family: "Montserrat";
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.text-in-image-1 span {
+    color: #6455e9;
+}
+
+/* --- About Section --- */
+.about-h1 {
+    font-family: "Montserrat";
+    font-size: 50px;
+    text-align: center;
+    margin: 80px 0 30px;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding: 0 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text-container p {
+    font-family: "Montserrat";
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-image-container img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Milestone Boxes --- */
+.achievement-h1 {
+    font-family: "Montserrat";
+    font-size: 42px;
+    text-align: center;
+    margin: 100px 0 40px;
+}
+
+.achievements-section {
+    padding: 0 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.achievement-card {
+    background: #ffffff;
+    padding: 30px 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-bottom: 4px solid #4f3fe4;
+    transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-8px);
+}
+
+.achievement-card span {
+    font-size: 40px;
+    color: #4f3fe4;
+    margin-bottom: 15px;
+}
+
+.achievement-card p {
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* --- High-End Program Section --- */
+.program-header-container {
+    padding: 120px 20px 40px;
+    text-align: center;
+}
+
+.program-h1 {
+    font-family: "Montserrat";
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.program-h1 span {
+    font-size: 18px;
+    font-weight: 400;
+    color: #6455e9;
+    display: block;
+    margin-top: 10px;
+}
+
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    padding: 0 80px 100px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.program-card-inner {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    height: 100%;
+}
+
+.program-card-inner:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(100, 85, 233, 0.15);
+}
+
+/* --- NEW (More Round) --- */
+.program-image-wrapper {
+    position: relative;
+    height: 180px;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    /* Optional: adds some space around the round image */
+}
+
+.program-card-image {
+    width: 120px;
+    /* Slightly larger looks better when round */
+    height: 120px;
+    border-radius: 50%;
+    /* This makes the image a perfect circle */
+    object-fit: cover;
+    /* Ensures the image doesn't stretch and fills the circle */
+    border: 4px solid #ffffff;
+    /* Adds a nice white border like a frame */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+.program-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #22243d;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.program-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.program-divider {
+    width: 40px;
+    height: 3px;
+    background: #6455e9;
+    margin: 0 auto 20px;
+}
+
+.program-content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.program-content p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* --- Contact & Footer --- */
+.contact-section {
+    background-color: #22243d;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.icon-container img {
+    width: 35px;
+    height: 35px;
+    transition: opacity 0.3s;
+}
+
+.icon-container img:hover {
+    opacity: 0.7;
+}
+
+/* --- Floating WhatsApp --- */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+}
+
+.whatsapp-float img {
+    width: 60px;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+}
+
+.whatsapp-float:hover img {
+    transform: scale(1.1);
+}
+
+/* --- Mobile Responsive --- */
+@media (max-width: 768px) {
+    .navbar {
+        gap: 20px;
+    }
+
+    .nav-item {
+        font-size: 16px;
+    }
+
+    .hero-image-container {
+        height: 60vh;
+    }
+
+    .text-in-image-1 {
+        font-size: 36px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .program-grid {
+        padding: 0 20px;
+    }
+
+    .achievements-section {
+        padding: 0 20px;
+    }
+
+    .achievement-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
